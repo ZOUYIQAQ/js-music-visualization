@@ -233,7 +233,7 @@ class Spectrogram {
     }
 }
 const audioEle = document.querySelector('audio')
-audioEle.volume = 0.2
+audioEle.volume = 1
 const canvas = document.querySelector('canvas')
 const spg = new Spectrogram(audioEle, canvas)
 // 范围区间 (0 ~ 22050)
