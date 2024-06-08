@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --base: 25px;
+            --width: calc(var(--base) * 16);
+            --height: calc(var(--base) * 9);
+        }
+        #canvas {
+            width: var(--width);
+            height: var(--height);
+        }
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/pitch.js@1.0.0/dist/pitch.min.js"></script>
+    <audio src="./川田瑠夏 - ときめくような一杯を.mp3" crossOrigin="anonymous" id="audio"></audio>
+    <button id="play">
+        播放音乐
+    </button>
+    <button id="pause">
+        暂停播放
+    </button>
+    <button onclick="clear_drow()">
+        清除画布
+    </button>
+    <canvas id="canvas"></canvas>
+    <script>
+    </script>
+</body>
+<script src="./main.js"></script>
+</html>
